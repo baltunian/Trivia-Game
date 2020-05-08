@@ -583,6 +583,198 @@ def mediumDifficulty():
 
 
 
+def hardDifficulty():
+	points = 0
+	penalties = 0
+	
+
+	print('''You have selected the hard difficulty. Things will once again be different here. You will not be given 
+		multiple choice questions; all questions will be open-ended and must be answered to move onto the next question.
+		There will once again be ten questions. Like with the medium difficulty, you will be penalized for each missed question 
+		and will be allowed up to three. After three penalties, you will lose. All questions will be worth 1 point unlike the 
+		easy and medium difficulties. Good luck''')
+
+	while penalties <  3:
+		print("Question 1: Where was Che Guevara killed?")
+		answer = input()
+
+		if answer == 'Bolivia':
+			print("Correct")
+			points+=1
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points,penalties))
+		print()
+
+		print("Question 2: In which year did Frank Zappa die?")
+		answer = int(input())
+
+		if answer == 1991:
+			print("Correct")
+			points+=1
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points,penalties))
+		print()
+
+		print("Question 3: What was the most common name given to girls in the U.S. in 1995?")
+		answer = input()
+
+		if answer == 'Ashley':
+			print("Correct")
+			points+=1
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points,penalties))
+		print()
+
+		if penalties == 3:
+			print("You lose. Better luck next time")
+			break
+
+		print("Question 4: Adolf Hitler and whom met for the first time at the Vienna Biennale?")
+		answer = input()
+
+		if answer == "Benito Mussolini" or answer == "Mussolini":
+			print("Correct")
+			points+=1
+		else: 
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points,penalties))
+		print()
+
+		if penalties == 3:
+			print("You lose. Better luck next time")
+			break
+
+		print("Question 5: What did Massachusetts outlaw in 1659?")
+		answer = input()
+
+		if answer == 'Christmas':
+			print("Correct")
+			points+=1
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points, penalties))
+		print()
+
+		if penalties == 3:
+			print("You lose. Better luck next time")
+			break
+
+		print("Question 6: From 1903 to 1958, every pope except one took what name?")
+		answer = input()
+
+		if answer == 'Pius':
+			print("Correct")
+			points+=1
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points,penalties))
+		print()
+
+		if penalties == 3:
+			print("You lose. Better luck next time")
+			break
+
+		print("Question 7: Who directed Back to the Future?")
+		answer = input()
+
+		if answer == "Robert Zemeckis":
+			print("Correct")
+			points+=1
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points,penalties))
+		print()
+
+		if penalties == 3:
+			print("You lose. Better luck next time")
+			break
+
+		print("Question 8: Which state were both Crazy Horse and Sitting Bull born in?")
+		answer = input()
+
+		if answer == 'South Dakota':
+			print("Correct")
+			points+=1
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points,penalties))
+		print()
+
+		if penalties == 3:
+			print("You lose. Better luck next time")
+			break
+
+		print("Question 9: What movie contains the famous line 'Charlie don't surf?'")
+		answer = input()
+
+		if answer == 'Apocalypse Now':
+			print("Correct")
+			points+=1 
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print("Total points: {}  Total penalties: {}".format(points,penalties))
+		print()
+
+		if penalties == 3:
+			print("You lose. Better luck next time")
+			break
+
+		print("Question 10: How many years were there between the Los Angeles Olympics?")
+		answer = int(input())
+
+		if answer == 52:
+			print("Correct")
+			points+=1
+		else:
+			print("Incorrect")
+			penalties+=1
+
+		print()
+
+		print('''Calculating final score...
+			...
+			...
+			...
+			Final score: {}'''.format(points))
+		print()
+
+		if penalties == 3:
+			print("You lose. Better luck next time.")
+			break
+		else:
+			if points == 10:
+				print("You got a perfect score!")
+				break
+			elif points > 7:
+				print("You scored great!")
+				break
+			elif points > 5:
+				print("You did a pretty good job")
+				break
+			else:
+				print("Better luck next time")
+				break
 
 
 
@@ -600,6 +792,8 @@ if __name__ == '__main__':
 
 	elif difficulty == "Medium":
 		mediumDifficulty()
+	else:
+		hardDifficulty()
 
 
 
