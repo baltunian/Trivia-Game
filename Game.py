@@ -14,7 +14,7 @@ def easyDifficulty():
 		D) The Rule of Ten''')
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
