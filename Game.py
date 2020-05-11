@@ -1,5 +1,6 @@
 def easyDifficulty():
 	points = 0
+	answer_choices = ['A','a','B','b','C','c','D','d']
 
 	print('''You have selected the easy difficulty. There will be
 		no penalities for wrong answers. If you get them wrong,
@@ -38,7 +39,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
@@ -63,7 +64,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
@@ -88,7 +89,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
@@ -112,7 +113,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
@@ -136,7 +137,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
@@ -161,7 +162,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
@@ -185,7 +186,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
@@ -210,7 +211,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
@@ -240,7 +241,7 @@ def easyDifficulty():
 
 	answer = input()
 
-	while answer not in ('A','a','B','b','C','c','D','d'):
+	while answer not in answer_choices:
 		print("That is an invalid choice. Please enter A, B, C, or D")
 		answer = input()
 
